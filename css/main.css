@@ -1,0 +1,78 @@
+body
+{
+    background-color: #F7ECDE
+}
+
+
+.sTitle
+{
+font-family:"Pacifico" ;
+font-size: 3.125rem;
+font-weight: 500;
+border-bottom: black 1px dotted ;
+}
+
+
+.sTitle h1::after
+{
+    
+    content:'' ;
+    width: 16%;
+    height: 5%;
+    background-image: linear-gradient(to top ,#FEC260 0% 40%, #F7ECDE 40% 100% );
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    transition: 0.4s;
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+
+.sTitle h1:hover::after
+{
+    background-image: linear-gradient(to top, #FEC260 0% 90%, #F7ECDE 90% 100% );
+}
+
+.w-40
+{
+    width: 40%;
+}
+.sbody button
+{
+    background-color: #D1512D;
+    margin-left: 43%;
+    transition: 0.4s;
+}
+.sbody button:hover
+{
+    background-color: #BB4120;
+}
+
+.sbody
+{
+
+border-bottom: black 1px dotted ;
+}
+.vst
+{
+    background-color: #9EB23B;
+}
+.dlt
+{
+background-color: #EB1D36;
+}
+
+.bg-rows{
+    background-color: #F8F9FA;
+}
+.r-info
+{
+    top: 40%;
+    left: 32%;
+    padding: 0.5rem;
+}
+
+.back-info
+{
+    background-image: linear-gradient(#0000005e,#00000081);
+}

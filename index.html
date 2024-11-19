@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">    
+<link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body >
+    <div class=" position-fixed start-0 bottom-0 w-100 min-vh-100 back-info d-none" onclick="closeMsg()" id="r-info" >
+        <div class="w-40 mx-auto bg-white rounded-2 position-absolute r-info" >
+            <div class="d-flex justify-content-between">
+                <div class="w-40 mt-4 ms-3">
+                    <img src="balls.PNG" class="w-50" alt="">
+                </div>
+                <button onclick="closeMsg()" class="mt-2 me-4 fw-semibold bg-white border-0 fs-2">x</button>
+            </div>
+            <p class="ms-3 mt-4 fw-bold h5">
+                Site Name or Url is not valid, Please follow the <br>rules below :
+            </p>
+            <div class="d-flex gap-2 ms-3 mt-4 align-items-center">
+                <i class="fa-regular fa-circle-right fa-lg mb-3 text-danger"></i>
+                <p>Site name must contain at least 3 characters
+                </p>
+
+            </div>
+            <div class="d-flex ms-3 gap-2 align-items-center">
+                <i class="fa-regular fa-circle-right fa-lg mb-3 text-danger"></i>
+                <p>Site URL must be a valid one</p>
+
+            </div>
+        </div>
+    </div>
+    <section class="Position-relative">
+        <div class="container">
+            <div class="sTitle pb-5 text-center mt-5">
+                <h1 class="Position-relative">
+                    Bookmarker
+                </h1>
+            </div>
+            <div class="sbody pb-4">
+            <div class="text-center mt-4">
+                <img src="Capture.PNG" class="w-40" alt="">
+            </div>
+            <div class="d-flex mt-5 gap-2">
+                <div>
+                    <img src="sn.PNG" alt="">
+                </div>
+                <p class="fw-bold">
+                    Site Name
+                </p>
+              
+            </div>
+            <input oninput="validationName()" type="text" class="form-control py-2" name="bookmark-name" placeholder="Bookmark Name" id="bookmarkName">
+            
+            <div class="d-flex mt-4 gap-2">
+                <div>
+                    <img src="su.PNG" alt="">
+                </div>
+                <p class="fw-bold">
+                    Site URL
+                </p>
+              
+            </div>
+            <input oninput="validationUrl()" type="text" class="form-control py-2" name="bookmark-URL" placeholder="Bookmark URL" id="bookmarkURL">
+            <button onclick="addBookmark(), checkName()"  class=" mt-4 text-center text-white px-5 py-2 rounded border-0">Submit</button>
+            </div>
+            <div class="mb-5 bg-rows">
+            <div class="row  mt-4 py-2 border-bottom">
+                <div class="col-2 text-center">
+                    <span class="fw-bold">
+                        Index
+                    </span class="fw-bold">
+                </div>
+                <div class="col-4 text-center">
+                    <span class="fw-bold">
+                        Website Name
+                    </span class="fw-bold">
+                </div>
+                <div class="col-3 text-center">
+                    <span class="fw-bold">
+                        Visit
+                    </span class="fw-bold">
+                </div>
+                <div class="col-3 text-center">
+                    <span class="fw-bold">
+                        Delete
+                    </span class="fw-bold">
+                </div>
+
+            </div>
+            <div id="rowData">
+                       
+                </div>
+
+            </div>
+        
+   
+
+        </div>
+    </section>
+   
+
+
+
+
+    <script src="index.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
